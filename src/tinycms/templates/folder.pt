@@ -1,0 +1,12 @@
+<metal:html use-macro="main_template">
+  <metal:body fill-slot="body">
+
+    <ul class="nav">
+      <li tal:repeat="item context.values()">
+	<a href="${request.resource_url(item)}">${structure:item.title}</a>
+	${item}
+      </li>
+    </ul>
+  </metal:body>
+</metal:html>
+

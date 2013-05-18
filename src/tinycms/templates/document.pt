@@ -1,0 +1,9 @@
+<metal:html use-macro="main_template">
+  <metal:body fill-slot="body">
+    ${context.title}
+
+    ${structure:context.contents}
+
+  </metal:body>
+</metal:html>
+

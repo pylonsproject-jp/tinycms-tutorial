@@ -1,0 +1,7 @@
+<metal:html use-macro="main_template">
+  <metal:body fill-slot="body">
+    ${context.title}
+
+    <img src="${request.resource_url(context, 'raw')}">
+  </metal:body>
+</metal:html>

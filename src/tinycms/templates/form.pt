@@ -1,0 +1,5 @@
+<metal:html use-macro="main_template">
+  <metal:body fill-slot="body">
+    ${structure:form}
+  </metal:body>
+</metal:html>
