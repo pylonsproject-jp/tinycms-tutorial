@@ -27,17 +27,6 @@ class PersistentImageSchema(c.Schema):
                         validator=v.image)
 
 
-@view_config(context='.interfaces.IPreview')
-class PersistentImagePreview(object):
-    def __init__(self, context, request):
-        self.context = context
-        self.request = request
-
-    def __call__(self):
-        self.request.response.content_type = self.context.content_type
-        self.request.response.body = self.context.data
-        return self.request.response
-
 @view_config(context=".models.Folder", renderer="templates/folder.pt")
 class FolderView(object):
     def __init__(self, context, request):
