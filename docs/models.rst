@@ -41,10 +41,10 @@ PersistentImage
 :term:`Colander` は、フォームや、設定ファイル、 :term:`JSON` など様々な用途に使えるスキーマライブラリです。
 手始めに、先ほど定義した ``Document``, ``PersistentImage`` のスキーマ定義をしてみましょう。
 
-.. literalinclude:: ../src/tinycms/models.py
+.. literalinclude:: ../src/tinycms/views.py
    :pyobject: DocumentSchema
 
-.. literalinclude:: ../src/tinycms/models.py
+.. literalinclude:: ../src/tinycms/views.py
    :pyobject: PersistentImageSchema
 
 ``PersistentImageSchema`` では、 画像ファイルだけを取り扱います。

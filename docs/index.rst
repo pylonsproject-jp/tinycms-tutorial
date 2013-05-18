@@ -12,6 +12,10 @@ Contents:
    :maxdepth: 2
 
    models
+   views
+   forms
+   layout
+   security
    glossary
 
 Indices and tables
